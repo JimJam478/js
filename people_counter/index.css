@@ -1,7 +1,13 @@
+h1{
+    color: aliceblue;
+
+}
+
 h2 {
     font-size: 50px;
     margin-top: 0;
     margin-bottom: 20px;
+    color: aliceblue;
 }
 
 button {
@@ -21,4 +27,8 @@ button {
 
 #save-btn {
     background: darkgreen;
+}
+
+#save-el{
+    color: aliceblue;
 }
