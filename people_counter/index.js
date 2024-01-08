@@ -4,11 +4,11 @@ let saveEl = document.getElementById("save-el")
 function increment() {
     count += 1
     console.log('count incremented')
-    document.getElementById("count-el").innerText = count
+    document.getElementById("count-el").textContent = count
 }
 
 function save() {
     let entries = count + " - "
-    saveEl.innerText += entries
+    saveEl.textContent += entries
     console.log(count)
 }
