@@ -1,0 +1,24 @@
+h1{
+    color: goldenrod;
+}
+
+body{
+    background-image: url(23673.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+h2{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+button{
+    background-color: goldenrod;
+    width: 150px;
+    height: 50px;
+    
+}
