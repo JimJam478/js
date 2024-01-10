@@ -3,16 +3,16 @@ let secondCard = 10
 let hasBlackJack = false
 let isAlive = true
 let message = ""
-cards = [firstCard,secondCard]
-sum = firstCard + secondCard
-console.log(sum)
 
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardEl = document.getElementById("card-el")
 
 function startGame() {
+    cards = [firstCard,secondCard] 
+    sum = firstCard + secondCard
     renderGame()
+    console.log(cards.length)
 }
 
 function renderGame() {
@@ -37,6 +37,7 @@ function renderGame() {
         cardEl.textContent += cards[i] + " , "
     }
     sumEl.textContent = "Sum:" + " " + sum
+    
 }
 
 function newCard() {
@@ -51,8 +52,8 @@ function newCard() {
 function resetGame() {
     cardEl.textContent = "Cards: "
     sumEl.textContent = "Sum: "
-    sum = 0
-    for (let i=0; i<cards.length+1; i+=1){
+    sum = cards[0] + cards[1]
+    for (let i=0; i<=cards.length+1; i+=1){
         cards.pop(cards[i])
     }
 }
